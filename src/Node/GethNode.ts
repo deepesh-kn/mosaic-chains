@@ -97,15 +97,15 @@ export default class GethNode extends Node {
       '--port', `${this.port}`,
       '--rpc',
       '--rpcaddr', '0.0.0.0',
-      '--rpcvhosts', '\"*\"',
+      '--rpcvhosts=*',
       '--rpcapi', 'eth,net,web3,network,debug,txpool,admin,personal',
       '--rpcport', '8545',
       '--ws',
       '--wsaddr', '0.0.0.0',
       '--wsport', '8546',
       '--wsapi', 'eth,net,web3,network,debug,txpool,admin,personal',
-      '--wsorigins', '\"*\"',
-      '--rpccorsdomain', '\"*\"',
+      '--wsorigins=*',
+      '--rpccorsdomain=*',
     ]);
 
     if (this.bootnodes !== '') {
